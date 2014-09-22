@@ -11,6 +11,13 @@
 ;; hippie-expand is a better version of dabbrev-expand.
 ;; While dabbrev-expand searches for words you already types, in current;; buffers and other buffers, hippie-expand includes more sources,
 ;; such as filenames, klll ring...
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; PACKAGE: company              ;;
+;;                               ;;
+;; GROUP: Convenience -> Company ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(add-hook 'after-init-hook 'global-company-mode)
+
 (global-set-key (kbd "M-/") 'hippie-expand) ;; replace dabbrev-expand
 (setq
  hippie-expand-try-functions-list
